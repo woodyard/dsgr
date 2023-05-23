@@ -10,4 +10,4 @@ Import-Module OSD -Force
 
 #Start OSDCloudScriptPad
 Write-Host -ForegroundColor Green "Start OSDPad"
-Start-OSDPad -RepoOwner woodyard -RepoName osd -RepoFolder ScriptPad -Hide Script -BrandingTitle 'Windows Deployment'
+Start-OSDPad -RepoOwner woodyard -RepoName dsgr -RepoFolder ScriptPad -Hide Script -BrandingTitle 'Damstahl'

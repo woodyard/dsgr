@@ -1,26 +1,9 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory=$false)]
-    [string]$GroupTag = ""
+    [string]$GroupTag = "PROD"
 )
 #region Initialize
-
-
-Add-Type -AssemblyName System.Web
-
-$rawUrl = $MyInvocation.InvocationName
-$decodedUrl = [System.Web.HttpUtility]::UrlDecode($rawUrl)
-$queryString = [System.Web.HttpUtility]::ParseQueryString($decodedUrl)
-$rawUrl
-# Access the value of the 'grouptag' parameter
-$groupTag = $queryString['grouptag']
-
-# Use the value in your script
-Write-Host "GroupTag: $groupTag"
-
-
-Start-Sleep -Seconds 60
-
 
 #Start the Transcript
 $Transcript = "$((Get-Date).ToString('yyyy-MM-dd-HHmmss'))-OSDCloud.log"

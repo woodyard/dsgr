@@ -11,7 +11,7 @@ Add-Type -AssemblyName System.Web
 $rawUrl = $MyInvocation.InvocationName
 $decodedUrl = [System.Web.HttpUtility]::UrlDecode($rawUrl)
 $queryString = [System.Web.HttpUtility]::ParseQueryString($decodedUrl)
-
+$queryString
 # Access the value of the 'grouptag' parameter
 $groupTag = $queryString['grouptag']
 

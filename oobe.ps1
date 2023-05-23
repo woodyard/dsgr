@@ -5,9 +5,20 @@ param(
 )
 #region Initialize
 
-$queryString = $MyInvocation.BoundParameters.QueryString
 
-Write-Host ":$queryString"
+Add-Type -AssemblyName System.Web
+
+$rawUrl = $MyInvocation.InvocationName
+$decodedUrl = [System.Web.HttpUtility]::UrlDecode($rawUrl)
+$queryString = [System.Web.HttpUtility]::ParseQueryString($decodedUrl)
+
+# Access the value of the 'grouptag' parameter
+$groupTag = $queryString['grouptag']
+
+# Use the value in your script
+Write-Host "GroupTag: $groupTag"
+
+
 Start-Sleep -Seconds 60
 
 

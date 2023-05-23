@@ -313,12 +313,12 @@ Step-oobeTrustPSGallery
 Step-oobeSetDisplay
 Step-oobeSetRegionLanguage
 Step-oobeSetDateTime
-Step-oobeRegisterAutopilot
 Step-oobeRemoveAppxPackage
 # Step-oobeAddCapability
 Step-oobeUpdateDrivers
 Step-oobeUpdateWindows
 # Invoke-Webhook
+Step-oobeRegisterAutopilot
 Step-oobeRestartComputer
 # Step-oobeStopComputer
 #=================================================

@@ -156,7 +156,7 @@ function Step-oobeRegisterAutopilot {
         #Write-Host -ForegroundColor Green "(Process Id $($AutopilotProcess.Id))"
         #Return $AutopilotProcess
         Write-Host -ForegroundColor Cyan 'Registering Device in Autopilot ' -NoNewline
-        Get-WindowsAutopilotInfo -Online -Assign
+        Get-WindowsAutopilotInfo -Online -GroupTag "PROD" -Assign
     }
 }
 function Step-oobeRemoveAppxPackage {

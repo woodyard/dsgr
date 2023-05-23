@@ -1,5 +1,8 @@
 [CmdletBinding()]
-param()
+param(
+    [Parameter(Mandatory=$false)]
+    [string]$GroupTag = ""
+)
 #region Initialize
 
 #Start the Transcript
@@ -156,7 +159,12 @@ function Step-oobeRegisterAutopilot {
         #Write-Host -ForegroundColor Green "(Process Id $($AutopilotProcess.Id))"
         #Return $AutopilotProcess
         Write-Host -ForegroundColor Cyan 'Registering Device in Autopilot ' -NoNewline
-        Get-WindowsAutopilotInfo -Online -GroupTag "PROD" -Assign
+        If ($GroupTag -ne "") {
+            Get-WindowsAutopilotInfo -Online -GroupTag $GroupTag -Assign
+        }
+        else {
+            Get-WindowsAutopilotInfo -Online -Assign
+        }
     }
 }
 function Step-oobeRemoveAppxPackage {

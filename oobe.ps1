@@ -6,8 +6,8 @@ param(
 #region Initialize
 
 
-Write-Host $GroupTag
-Exit 0
+Write-Host ":$GroupTag"
+Start-Sleep -Seconds 60
 
 
 #Start the Transcript

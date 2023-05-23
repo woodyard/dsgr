@@ -5,8 +5,9 @@ param(
 )
 #region Initialize
 
+$queryString = $MyInvocation.BoundParameters.QueryString
 
-Write-Host ":$GroupTag"
+Write-Host ":$queryString"
 Start-Sleep -Seconds 60
 
 

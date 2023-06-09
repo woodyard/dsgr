@@ -17,10 +17,9 @@ $Params = @{
     OSLanguage = "en-us"
     ZTI = $true
     Firmware = $true
-    FindImageFile = ""
 }
 
-Start-OSDCloud @Params
+Start-OSDCloud @Params -FindImageFile
 
 #================================================
 #  [PostOS] AutopilotOOBE CMD Command Line

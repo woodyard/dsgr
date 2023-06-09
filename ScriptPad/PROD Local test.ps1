@@ -17,7 +17,7 @@ $Params = @{
     OSLanguage = "en-us"
     ZTI = $true
     Firmware = $true
-    FindImageFile
+    FindImageFile = $null
     $OSImageIndex = "AUTO"
 }
 

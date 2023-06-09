@@ -17,8 +17,7 @@ $Params = @{
     OSLanguage = "en-us"
     ZTI = $true
     Firmware = $true
-    FindImageFile = $null
-    $OSImageIndex = "AUTO"
+    FindImageFile = ""
 }
 
 Start-OSDCloud @Params

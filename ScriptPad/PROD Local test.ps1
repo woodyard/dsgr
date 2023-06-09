@@ -19,7 +19,7 @@ $Params = @{
     Firmware = $true
 }
 
-Start-OSDCloud @Params -FindImageFile
+Start-OSDCloud -OSName "Windows 11 22H2 x64" -OSLanguage "en-us" -ZTI $true -Firmware $true -FindImageFile
 
 #================================================
 #  [PostOS] AutopilotOOBE CMD Command Line

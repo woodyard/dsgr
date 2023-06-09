@@ -6,9 +6,6 @@ if ((Get-MyComputerModel) -match 'Virtual') {
     Set-DisRes 1600
 }
 
-Write-Host -ForegroundColor Green "Updating OSD PowerShell Module"
-Install-Module OSD -Force
-
 Write-Host  -ForegroundColor Green "Importing OSD PowerShell Module"
 Import-Module OSD -Force   
 
@@ -24,7 +21,8 @@ $Params = @{
     ZTI = $true
     Firmware = $true
 }
-Start-OSDCloud -ImageFileUrl -ZTI $true -Firmware $true
+
+Start-OSDCloud -FindImageFile -ZTI $true -Firmware $true
 
 <#
 #================================================

@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory=$false)]
-    [string]$GroupTag = "METAL-WARE"
+    [string]$GroupTag = "METAL_WARE"
 )
 #region Initialize
 

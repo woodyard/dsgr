@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory=$false)]
-    [string]$GroupTag = "KMR-WARE"
+    [string]$GroupTag = "KMR_WARE"
 )
 #region Initialize
 

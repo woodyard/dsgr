@@ -31,10 +31,10 @@ $groupCMembers = Get-AzureADGroupMember -ObjectId $groupCObjectId | Where-Object
 
 # Remove users from Group C if they are not in the result
 $groupCMembers | Where-Object { $groupAMembersNotInGroupB.ObjectId -notcontains $_.ObjectId } | ForEach-Object {
-    Remove-AzureADGroupMember -ObjectId $groupC.ObjectId -MemberId $_.ObjectId
+    Remove-AzureADGroupMember -ObjectId $groupCObjectId -MemberId $_.ObjectId
 }
 
 # Add the result to Group C
 $groupAMembersNotInGroupB | ForEach-Object {
-    Add-AzureADGroupMember -ObjectId $groupC.ObjectId -RefObjectId $_.ObjectId
+    Add-AzureADGroupMember -ObjectId $groupCObjectId -RefObjectId $_.ObjectId
 }

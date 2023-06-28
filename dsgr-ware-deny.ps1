@@ -9,8 +9,9 @@ $groupBName = "SEC-DSGR-Warehouse_Device_Accounts"
 $groupCName = "SEC-DSGR-Warehouse_Device_Denied_Accounts"
 
 # Get Group A and Group B's object id
-$groupAObjectId = (Get-AzureADGroup -SearchString $groupAName).ObjectId
-$groupBObjectId = (Get-AzureADGroup -SearchString $groupBName).ObjectId
+$groupAObjectId = "66fdb3dc-3ed3-41db-a0aa-30f96a670bed"
+$groupBObjectId = "4113e212-f110-4c3e-99eb-1d674def7a9e"
+$groupCObjectId = "d9e1b38d-0706-4651-92a2-764178175061"
 
 # Get all members of Group A and Group B
 $groupAMembers = Get-AzureADGroupMember -ObjectId $groupAObjectId | Where-Object { $_.ObjectType -eq "User" }
@@ -25,14 +26,9 @@ $groupBMembers | ForEach-Object {
 # Get members of Group A that are not in Group B
 $groupAMembersNotInGroupB = $groupAMembers | Where-Object { -not $groupBMembersHashTable[$_.ObjectId] }
 
-# Try to get Group C, if it doesn't exist, create it
-$groupC = Get-AzureADGroup -SearchString $groupCName
-if ($null -eq $groupC) {
-    $groupC = New-AzureADGroup -DisplayName $groupCName -Description $groupCName -SecurityEnabled $true -MailEnabled $false -MailNickName $groupCName
-}
 
 # Get all members of Group C
-$groupCMembers = Get-AzureADGroupMember -ObjectId $groupC.ObjectId | Where-Object { $_.ObjectType -eq "User" }
+$groupCMembers = Get-AzureADGroupMember -ObjectId $groupCObjectId | Where-Object { $_.ObjectType -eq "User" }
 
 # Remove users from Group C if they are not in the result
 $groupCMembers | Where-Object { $groupAMembersNotInGroupB.ObjectId -notcontains $_.ObjectId } | ForEach-Object {

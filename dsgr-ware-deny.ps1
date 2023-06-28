@@ -26,7 +26,6 @@ $groupBMembers | ForEach-Object {
 # Get members of Group A that are not in Group B
 $groupAMembersNotInGroupB = $groupAMembers | Where-Object { -not $groupBMembersHashTable[$_.ObjectId] }
 
-
 # Get all members of Group C
 $groupCMembers = Get-AzureADGroupMember -ObjectId $groupCObjectId | Where-Object { $_.ObjectType -eq "User" }
 

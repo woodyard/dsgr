@@ -25,7 +25,7 @@ $Params = @{
     Firmware = $false
 }
 
-# $Global:MyOSDCloud.ApplyManufacturerDrivers = $false
+$Global:MyOSDCloud.ApplyManufacturerDrivers = $false
 
 Start-OSDCloud @Params
 

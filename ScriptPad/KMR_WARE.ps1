@@ -22,10 +22,10 @@ $Params = @{
     OSLanguage = "en-us"
     OSLicense = "Retail"
     ZTI = $true
-    Firmware = $true
+    Firmware = $false
 }
 
-$Global:MyOSDCloud.ApplyManufacturerDrivers = $false
+# $Global:MyOSDCloud.ApplyManufacturerDrivers = $false
 
 Start-OSDCloud @Params
 

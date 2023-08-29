@@ -24,6 +24,9 @@ $Params = @{
     ZTI = $true
     Firmware = $true
 }
+
+$Global:MyOSDCloud.ApplyManufacturerDrivers = $false
+
 Start-OSDCloud @Params
 
 <#

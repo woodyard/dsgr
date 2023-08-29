@@ -16,8 +16,7 @@ Import-Module OSD -Force
 #   [OS] Params and Start-OSDCloud
 #=======================================================================
 $Params = @{
-    OSVersion = "Windows 11"
-    OSBuild = "22H2"
+    OSName = "Windows 11 22H2 x64"
     OSEdition = "Pro"
     OSLanguage = "en-us"
     OSLicense = "Retail"
@@ -26,9 +25,6 @@ $Params = @{
 }
 
 $Global:MyOSDCloud = @{
-	ApplyManufacturerDrivers = $false
-	ApplyCatalogDrivers = $false
-	ApplyCatalogFirmware = $false
  	DriverPackName = "None"
   	MSCatalogFirmware = $false
 }

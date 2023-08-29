@@ -24,6 +24,11 @@ $Params = @{
     Firmware = $false
 }
 
+$Global:MyOSDCloud = @{
+ 	DriverPackName = "None"
+  	MSCatalogFirmware = $false
+}
+
 Start-OSDCloud @Params
 
 <#

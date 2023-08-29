@@ -29,7 +29,7 @@ $Global:MyOSDCloud = @{
 	ApplyManufacturerDrivers = $false
 	ApplyCatalogDrivers = $false
 	ApplyCatalogFirmware = $false
- 	DriverPack = "None"
+ 	DriverPackName = "None"
 }
 
 Start-OSDCloud @Params

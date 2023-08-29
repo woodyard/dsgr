@@ -16,14 +16,14 @@ Import-Module OSD -Force
 #   [OS] Params and Start-OSDCloud
 #=======================================================================
 $Params = @{
-    OSVersion = "Windows 11"
-    OSBuild = "22H2"
+    OSName = "Windows 11 22H2 x64"
     OSEdition = "Pro"
     OSLanguage = "en-us"
     OSLicense = "Retail"
     ZTI = $true
-    Firmware = $true
+    Firmware = $false
 }
+
 Start-OSDCloud @Params
 
 <#

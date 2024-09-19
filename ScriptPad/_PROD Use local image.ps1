@@ -16,12 +16,9 @@ Import-Module OSD -Force
 #   [OS] Params and Start-OSDCloud
 #=======================================================================
 $Params = @{
-    OSName = "Windows 11 23H2 x64"
-    OSEdition = "Pro"
-    OSLanguage = "en-us"
-    OSLicense = "Retail"
+    ImageFileUrl = "C:\OSDCloud\DSGR\OS\Windows 11\Pro\install.wim"
+    ImageIndex = 1  # Use the appropriate index for your WIM file
     ZTI = $true
-    Firmware = $false
 }
 
 Start-OSDCloud @Params

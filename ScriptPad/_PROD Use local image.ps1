@@ -34,7 +34,7 @@ if (Test-Path $CustomImagePath) {
     }
 }
 
-Start-OSDCloud @Params
+Start-OSDCloud -ZTI -Firmware -FindImageFile
 
 #================================================
 #  [PostOS] AutopilotOOBE CMD Command Line

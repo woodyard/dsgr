@@ -25,7 +25,7 @@ if (Test-Path $CustomImagePath) {
 } else {
     # Fall back to the original parameters if the WIM file is not found
     $Params = @{
-        OSName = "Windows 11 24H2 x64"
+        OSName = "Windows 11 25H2 x64"
         OSEdition = "Pro"
         OSLanguage = "en-us"
         OSLicense = "Retail"

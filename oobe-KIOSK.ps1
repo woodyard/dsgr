@@ -17,7 +17,7 @@ $Global:oobeCloud = @{
     oobeSetRegionLanguage = $true
     oobeSetDateTime = $true
     oobeRegisterAutopilot = $true
-    oobeRegisterAutopilotCommand = 'Get-WindowsAutopilotInfo -Online'
+    oobeRegisterAutopilotCommand = 'Get-WindowsAutopilotInfoCommunity -Online'
     oobeRemoveAppxPackage = $true
     oobeRemoveAppxPackageName = 'CommunicationsApps','OfficeHub','People','Skype','Solitaire','Xbox','ZuneMusic','ZuneVideo','MicrosoftTeams','Windows.DevHome','YourPhone','Clipchamp','WindowsFeedbackHub','MicrosoftOfficeHub','Microsoft.Windows.Photos','OutlookForWindows'
     oobeAddCapability = $true
@@ -138,11 +138,11 @@ function Step-oobeInstallScriptAutopilot {
     param ()
     if ($env:UserName -eq 'defaultuser0') {
         $env:Path += ";C:\Program Files\WindowsPowerShell\Scripts"
-        $Requirement = Get-InstalledScript -Name Get-WindowsAutoPilotInfo -ErrorAction SilentlyContinue
+        $Requirement = Get-InstalledScript -Name get-windowsautopilotinfocommunity -ErrorAction SilentlyContinue
         if (-not $Requirement)
         {
-            Write-Host -ForegroundColor Cyan 'Install-Script Get-WindowsAutoPilotInfo'
-            Install-Script -Name Get-WindowsAutoPilotInfo -Force
+            Write-Host -ForegroundColor Cyan 'Install-Script get-windowsautopilotinfocommunity'
+            Install-Script -Name get-windowsautopilotinfocommunity -Force
         }
     }
 }
@@ -160,10 +160,10 @@ function Step-oobeRegisterAutopilot {
         #Return $AutopilotProcess
         Write-Host -ForegroundColor Cyan 'Registering Device in Autopilot ' -NoNewline
         If ($GroupTag -ne "") {
-            Get-WindowsAutopilotInfo -Online -GroupTag $GroupTag -Assign
+            Get-WindowsAutopilotInfoCommunity -Online -GroupTag $GroupTag -Assign
         }
         else {
-            Get-WindowsAutopilotInfo -Online -Assign
+            Get-WindowsAutopilotInfoCommunity -Online -Assign
         }
     }
 }

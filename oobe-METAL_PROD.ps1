@@ -109,30 +109,6 @@ function Step-oobeTrustPSGallery {
         }
     }
 }
-function Step-oobeInstallModuleAutopilot {
-    [CmdletBinding()]
-    param ()
-    if ($env:UserName -eq 'defaultuser0') {
-        $Requirement = Import-Module WindowsAutopilotIntune -PassThru -ErrorAction Ignore
-        if (-not $Requirement)
-        {
-            Write-Host -ForegroundColor Cyan 'Install-Module WindowsAutopilotIntune'
-            Install-Module WindowsAutopilotIntune -Force
-        }
-    }
-}
-function Step-oobeInstallModuleAzureAd {
-    [CmdletBinding()]
-    param ()
-    if ($env:UserName -eq 'defaultuser0') {
-        $Requirement = Import-Module AzureAD -PassThru -ErrorAction Ignore
-        if (-not $Requirement)
-        {
-            Write-Host -ForegroundColor Cyan 'Install-Module AzureAD'
-            Install-Module AzureAD -Force
-        }
-    }
-}
 function Step-oobeInstallScriptAutopilot {
     [CmdletBinding()]
     param ()
@@ -150,8 +126,6 @@ function Step-oobeRegisterAutopilot {
     [CmdletBinding()]
     param ()
     if (($env:UserName -eq 'defaultuser0') -and ($Global:oobeCloud.oobeRegisterAutopilot -eq $true)) {
-        Step-oobeInstallModuleAutopilot
-        Step-oobeInstallModuleAzureAd
         Step-oobeInstallScriptAutopilot
 
         #Write-Host -ForegroundColor Cyan 'Registering Device in Autopilot in new PowerShell window ' -NoNewline

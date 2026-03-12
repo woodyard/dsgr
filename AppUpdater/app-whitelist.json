@@ -12,36 +12,66 @@
             "DefaultTimeoutAction": false,
             "TimeoutSeconds": 120,
             "DeferralEnabled": true,
-            "MaxDeferralDays": 5
+            "MaxDeferralDays": 2
         },
         "Network": {
             "PromptWhenBlocked": true,
             "DefaultTimeoutAction": false,
-            "TimeoutSeconds": 90
+            "TimeoutSeconds": 120,
+            "MaxDeferralDays": 2
         },
         "Development": {
             "PromptWhenBlocked": true,
             "DefaultTimeoutAction": false,
-            "TimeoutSeconds": 90,
+            "TimeoutSeconds": 120,
             "DeferralEnabled": true,
-            "MaxDeferralDays": 14
+            "MaxDeferralDays": 7
         },
         "Productivity": {
             "PromptWhenBlocked": true,
             "DefaultTimeoutAction": false,
-            "TimeoutSeconds": 120
+            "TimeoutSeconds": 120,
+            "MaxDeferralDays": 5
         },
         "Communication": {
             "PromptWhenBlocked": true,
             "DefaultTimeoutAction": false,
-            "TimeoutSeconds": 60
+            "TimeoutSeconds": 120,
+            "MaxDeferralDays": 5
         },
         "AI": {
             "PromptWhenBlocked": true,
             "DefaultTimeoutAction": false,
-            "TimeoutSeconds": 60,
+            "TimeoutSeconds": 120,
             "DeferralEnabled": true,
             "MaxDeferralDays": 5
+        },
+        "Media": {
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 120
+        },
+        "Utility": {
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 120
+        },
+        "Peripheral": {
+            "PromptWhenBlocked": false,
+            "DefaultTimeoutAction": true
+        },
+        "Runtime": {
+            "PromptWhenBlocked": false,
+            "DefaultTimeoutAction": true
+        },
+        "Research": {
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 120
+        },
+        "Other": {
+            "PromptWhenBlocked": false,
+            "DefaultTimeoutAction": true
         }
     },
     "Apps": [
@@ -71,22 +101,19 @@
             "FriendlyName": "1Password",
             "Category": "Security",
             "BlockingProcess": "1Password",
-            "TimeoutSeconds": 180,
             "ForcedUpgradeMessage": "1Password updates can no longer be deferred."
         },
         {
             "AppID": "Bitwarden.Bitwarden",
             "FriendlyName": "Bitwarden",
             "Category": "Security",
-            "BlockingProcess": "Bitwarden",
-            "TimeoutSeconds": 90
+            "BlockingProcess": "Bitwarden"
         },
         {
             "AppID": "LogMeIn.LastPass",
             "FriendlyName": "LastPass",
             "Category": "Security",
-            "BlockingProcess": "LastPass",
-            "TimeoutSeconds": 90
+            "BlockingProcess": "LastPass"
         },
         {
             "AppID": "DominikReichl.KeePass",
@@ -142,8 +169,7 @@
             "AppID": "WinSCP.WinSCP",
             "FriendlyName": "WinSCP",
             "Category": "Network",
-            "BlockingProcess": "WinSCP",
-            "TimeoutSeconds": 75
+            "BlockingProcess": "WinSCP"
         },
 
         {
@@ -151,7 +177,6 @@
             "FriendlyName": "Visual Studio Code",
             "Category": "Development",
             "BlockingProcess": "Code",
-            "TimeoutSeconds": 60,
             "ForcedUpgradeMessage": "VS Code updates are now required for compatibility."
         },
         {
@@ -169,8 +194,7 @@
             "AppID": "Notepad++.Notepad++",
             "FriendlyName": "Notepad++",
             "Category": "Development",
-            "BlockingProcess": "notepad++",
-            "TimeoutSeconds": 180
+            "BlockingProcess": "notepad++"
         },
         {
             "AppID": "Microsoft.PowerShell",
@@ -186,8 +210,7 @@
             "AppID": "Microsoft.WindowsTerminal",
             "FriendlyName": "Windows Terminal",
             "Category": "Development",
-            "BlockingProcess": "WindowsTerminal",
-            "TimeoutSeconds": 60
+            "BlockingProcess": "WindowsTerminal"
         },
         {
             "AppID": "JanDeDobbeleer.OhMyPosh",
@@ -228,15 +251,13 @@
             "AppID": "Microsoft.AzureDataStudio",
             "FriendlyName": "Azure Data Studio",
             "Category": "Development",
-            "BlockingProcess": "azuredatastudio",
-            "TimeoutSeconds": 60
+            "BlockingProcess": "azuredatastudio"
         },
         {
             "AppID": "Microsoft.Azure.StorageExplorer",
             "FriendlyName": "Azure Storage Explorer",
             "Category": "Development",
             "BlockingProcess": "StorageExplorer",
-            "TimeoutSeconds": 75,
             "Disabled": true
         },
         {
@@ -260,8 +281,7 @@
             "AppID": "WinMerge.WinMerge",
             "FriendlyName": "WinMerge",
             "Category": "Development",
-            "BlockingProcess": "WinMergeU",
-            "TimeoutSeconds": 75
+            "BlockingProcess": "WinMergeU"
         },
         {
             "AppID": "JGraph.Draw",
@@ -363,8 +383,7 @@
             "AppID": "calibre.calibre",
             "FriendlyName": "Calibre",
             "Category": "Productivity",
-            "BlockingProcess": "calibre",
-            "TimeoutSeconds": 75
+            "BlockingProcess": "calibre"
         },
         {
             "AppID": "wethat.onenotetaggingkit",
@@ -424,10 +443,7 @@
             "AppID": "OBSProject.OBSStudio",
             "FriendlyName": "OBS Studio",
             "Category": "Media",
-            "BlockingProcess": "obs64",
-            "PromptWhenBlocked": true,
-            "DefaultTimeoutAction": false,
-            "TimeoutSeconds": 120
+            "BlockingProcess": "obs64"
         },
         {
             "AppID": "ImageMagick.ImageMagick",
@@ -462,10 +478,7 @@
             "AppID": "Mythicsoft.AgentRansack",
             "FriendlyName": "Agent Ransack",
             "Category": "Utility",
-            "BlockingProcess": "AgentRansack",
-            "PromptWhenBlocked": true,
-            "DefaultTimeoutAction": false,
-            "TimeoutSeconds": 75
+            "BlockingProcess": "AgentRansack"
         },
         {
             "AppID": "Microsoft.PowerToys",
@@ -473,7 +486,6 @@
             "Category": "Utility",
             "Disabled": true,
             "BlockingProcess": "PowerToys",
-            "PromptWhenBlocked": true,
             "DefaultTimeoutAction": true
         },
         {

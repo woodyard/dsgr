@@ -35,33 +35,41 @@
     },
     {
         "AppID": "Salesforce.sfdx-cli",
+        "FriendlyName": "Salesforce CLI",
         "Disabled": true
     },
     {
         "AppID": "Microsoft.WindowsPCHealthCheck",
+        "FriendlyName": "PC Health Check",
         "Disabled": true
     },
     {
         "AppID": "Azul.Zulu",
+        "FriendlyName": "Azul Zulu JDK",
         "Disabled": true
     },
     {
         "AppID": "Microsoft.Edge",
+        "FriendlyName": "Microsoft Edge",
         "Disabled": true
     },
     {
         "AppID": "Oracle.JavaRuntimeEnvironment",
+        "FriendlyName": "Java Runtime Environment",
         "Disabled": true
     },
     {
-        "AppID": "RStudio.RStudio.OpenSource"
+        "AppID": "RStudio.RStudio.OpenSource",
+        "FriendlyName": "RStudio"
     },
     {
         "AppID": "Posit.RStudio",
+        "FriendlyName": "RStudio",
         "BlockingProcess": "rstudio"
     },
     {
         "AppID": "RProject.R",
+        "FriendlyName": "R",
         "BlockingProcess": "rgui"
     },
     {
@@ -85,8 +93,7 @@
     {
         "AppID": "7zip.7zip",
         "FriendlyName": "7-Zip",
-        "BlockingProcess": "7zFM",
-        "DefaultTimeoutAction": true
+        "BlockingProcess": "7zFM"
     },
     {
         "AppID": "Zoom.Zoom",
@@ -116,7 +123,8 @@
         "ForcedUpgradeMessage": "1Password updates can no longer be deferred."
     },
     {
-        "AppID": "Logitech.SetPoint"
+        "AppID": "Logitech.SetPoint",
+        "FriendlyName": "Logitech SetPoint"
     },
     {
         "AppID": "TheDocumentFoundation.LibreOffice",
@@ -127,7 +135,8 @@
         "TimeoutSeconds": 120
     },
     {
-        "AppID": "Lenovo.QuickClean"
+        "AppID": "Lenovo.QuickClean",
+        "FriendlyName": "Lenovo QuickClean"
     },
     {
         "AppID": "Bitwarden.Bitwarden",
@@ -140,8 +149,7 @@
     {
         "AppID": "SumatraPDF.SumatraPDF",
         "FriendlyName": "SumatraPDF",
-        "BlockingProcess": "SumatraPDF",
-        "DefaultTimeoutAction": true
+        "BlockingProcess": "SumatraPDF"
     },
     {
         "AppID": "Microsoft.WindowsTerminal",
@@ -152,7 +160,8 @@
         "TimeoutSeconds": 60
     },
     {
-        "AppID": "Logitech.UnifyingSoftware"
+        "AppID": "Logitech.UnifyingSoftware",
+        "FriendlyName": "Logitech Unifying Software"
     },
     {
         "AppID": "Microsoft.Azure.StorageExplorer",
@@ -172,7 +181,8 @@
         "TimeoutSeconds": 75
     },
     {
-        "AppID": "wethat.onenotetaggingkit"
+        "AppID": "wethat.onenotetaggingkit",
+        "FriendlyName": "OneNote Tagging Kit"
     },
     {
         "AppID": "LogMeIn.LastPass",
@@ -183,15 +193,17 @@
         "TimeoutSeconds": 90
     },
     {
-        "AppID": "Microsoft.PowerShell.Preview"
+        "AppID": "Microsoft.PowerShell.Preview",
+        "FriendlyName": "PowerShell Preview"
     },
     {
         "AppID": "PuTTY.PuTTY",
-        "BlockingProcess": "putty",
-        "DefaultTimeoutAction": true
+        "FriendlyName": "PuTTY",
+        "BlockingProcess": "putty"
     },
     {
-        "AppID": "Git.Git"
+        "AppID": "Git.Git",
+        "FriendlyName": "Git"
     },
     {
         "AppID": "GitHub.GitHubDesktop",
@@ -203,25 +215,26 @@
     },
     {
         "AppID": "RARLab.WinRAR",
-        "BlockingProcess": "WinRAR",
-        "DefaultTimeoutAction": true
+        "FriendlyName": "WinRAR",
+        "BlockingProcess": "WinRAR"
     },
     {
-        "AppID": "JGraph.Draw"
+        "AppID": "JGraph.Draw",
+        "FriendlyName": "draw.io"
     },
     {
         "AppID": "Meld.Meld",
-        "BlockingProcess": "Meld",
-        "DefaultTimeoutAction": true
+        "FriendlyName": "Meld",
+        "BlockingProcess": "Meld"
     },
     {
-        "AppID": "Kitware.CMake"
+        "AppID": "Kitware.CMake",
+        "FriendlyName": "CMake"
     },
     {
         "AppID": "VideoLAN.VLC",
         "FriendlyName": "VLC Media Player",
-        "BlockingProcess": "vlc",
-        "DefaultTimeoutAction": true
+        "BlockingProcess": "vlc"
     },
     {
         "AppID": "Jabra.Direct",
@@ -230,28 +243,29 @@
         "AutoCloseProcesses": "jabra-direct"
     },
     {
-        "AppID": "ArtifexSoftware.GhostScript"
+        "AppID": "ArtifexSoftware.GhostScript",
+        "FriendlyName": "Ghostscript"
     },
     {
-        "AppID": "ImageMagick.ImageMagick"
+        "AppID": "ImageMagick.ImageMagick",
+        "FriendlyName": "ImageMagick"
     },
     {
         "AppID": "IrfanSkiljan.IrfanView",
+        "FriendlyName": "IrfanView",
         "BlockingProcess": "i_view64"
     },
     {
         "AppID": "OpenJS.NodeJS",
-        "FriendlyName": "Node.js",
-        "BlockingProcess": "",
-        "PromptWhenBlocked": false,
-        "DefaultTimeoutAction": true,
-        "TimeoutSeconds": 60
+        "FriendlyName": "Node.js"
     },
     {
-        "AppID": "OpenJS.NodeJS.LTS"
+        "AppID": "OpenJS.NodeJS.LTS",
+        "FriendlyName": "Node.js LTS"
     },
     {
-        "AppID": "Microsoft.webpicmd"
+        "AppID": "Microsoft.webpicmd",
+        "FriendlyName": "Web Platform Installer"
     },
     {
         "AppID": "Apache.OpenOffice",
@@ -263,24 +277,30 @@
     },
     {
         "AppID": "DominikReichl.KeePass",
+        "FriendlyName": "KeePass",
         "BlockingProcess": "KeePass"
     },
     {
-        "AppID": "Microsoft.UpdateAssistant"
+        "AppID": "Microsoft.UpdateAssistant",
+        "FriendlyName": "Windows Update Assistant"
     },
     {
-        "AppID": "Amazon.AWSCLI"
+        "AppID": "Amazon.AWSCLI",
+        "FriendlyName": "AWS CLI"
     },
     {
         "AppID": "Keybase.Keybase",
+        "FriendlyName": "Keybase",
         "BlockingProcess": "Keybase"
     },
     {
         "AppID": "Anki.Anki",
+        "FriendlyName": "Anki",
         "BlockingProcess": "anki"
     },
     {
-        "AppID": "PostgreSQL.PostgreSQL"
+        "AppID": "PostgreSQL.PostgreSQL",
+        "FriendlyName": "PostgreSQL"
     },
     {
         "AppID": "WinSCP.WinSCP",
@@ -312,10 +332,12 @@
         "ForcedUpgradeMessage": "Adobe Reader security updates cannot be postponed due to security requirements."
     },
     {
-        "AppID": "RazerInc.RazerInstaller"
+        "AppID": "RazerInc.RazerInstaller",
+        "FriendlyName": "Razer Installer"
     },
     {
-        "AppID": "Cloudflare.cloudflared"
+        "AppID": "Cloudflare.cloudflared",
+        "FriendlyName": "cloudflared"
     },
     {
         "AppID": "Cloudflare.Warp",
@@ -329,23 +351,29 @@
         "ForcedUpgradeMessage": "Cloudflare WARP updates can no longer be deferred. Your network connection may briefly disconnect during the update."
     },
     {
-        "AppID": "Microsoft.Bicep"
+        "AppID": "Microsoft.Bicep",
+        "FriendlyName": "Bicep"
     },
     {
-        "AppID": "JanDeDobbeleer.OhMyPosh"
+        "AppID": "JanDeDobbeleer.OhMyPosh",
+        "FriendlyName": "Oh My Posh"
     },
     {
-        "AppID": "Logitech.Options"
+        "AppID": "Logitech.Options",
+        "FriendlyName": "Logitech Options"
     },
     {
         "AppID": "Logitech.OptionsPlus",
+        "FriendlyName": "Logi Options+",
         "Disabled": true
     },
     {
-        "AppID": "TrackerSoftware.PDF-XChangeEditor"
+        "AppID": "TrackerSoftware.PDF-XChangeEditor",
+        "FriendlyName": "PDF-XChange Editor"
     },
     {
-        "AppID": "Microsoft.VCLibs.Desktop.*"
+        "AppID": "Microsoft.VCLibs.Desktop.*",
+        "FriendlyName": "VC++ Libs (Desktop)"
     },
     {
         "AppID": "Microsoft.AzureDataStudio",
@@ -364,7 +392,8 @@
         "TimeoutSeconds": 75
     },
     {
-        "AppID": "ParadoxInteractive.ParadoxLauncher"
+        "AppID": "ParadoxInteractive.ParadoxLauncher",
+        "FriendlyName": "Paradox Launcher"
     },
     {
         "AppID": "Fortinet.FortiClientVPN",
@@ -380,6 +409,7 @@
     },
     {
         "AppID": "Foxit.FoxitReader.Inno",
+        "FriendlyName": "Foxit Reader",
         "BlockingProcess": "FoxitReader"
     },
     {
@@ -391,10 +421,12 @@
         "TimeoutSeconds": 120
     },
     {
-        "AppID": "Python.Launcher"
+        "AppID": "Python.Launcher",
+        "FriendlyName": "Python Launcher"
     },
     {
-        "AppID": "Microsoft.VCRedist.*"
+        "AppID": "Microsoft.VCRedist.*",
+        "FriendlyName": "Visual C++ Redistributable"
     },
     {
         "AppID": "TeamViewer.TeamViewer.Host",
@@ -424,7 +456,8 @@
         "BlockingProcess": "PAD.Console.Host,PAD.Robot.Service"
     },
     {
-        "AppID": "Microsoft.DotNet.Runtime.*"
+        "AppID": "Microsoft.DotNet.Runtime.*",
+        "FriendlyName": ".NET Runtime"
     },
     {
         "AppID": "Microsoft.PowerShell",
@@ -433,8 +466,7 @@
     {
         "AppID": "WiresharkFoundation.Wireshark",
         "FriendlyName": "Wireshark",
-        "BlockingProcess": "Wireshark",
-        "DefaultTimeoutAction": true
+        "BlockingProcess": "Wireshark"
     },
     {
         "AppID": "Microsoft.DotNet.SDK.*",

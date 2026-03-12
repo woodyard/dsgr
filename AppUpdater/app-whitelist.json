@@ -1,498 +1,571 @@
-[
-    {
-        "AppID": "Mozilla.Firefox*",
-        "FriendlyName": "Firefox",
-        "Disabled": false,
-        "BlockingProcess": "firefox",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 60,
-        "DeferralEnabled": true,
-        "MaxDeferralDays": 5,
-        "ForcedUpgradeMessage": "Firefox security updates can no longer be deferred."
-    },
-    {
-        "AppID": "Google.Chrome*",
-        "FriendlyName": "Chrome",
-        "BlockingProcess": "chrome",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 60,
-        "DeferralEnabled": true,
-        "MaxDeferralDays": 5,
-        "ForcedUpgradeMessage": "Chrome security updates can no longer be deferred."
-    },
-    {
-        "AppID": "Microsoft.VisualStudioCode",
-        "FriendlyName": "Visual Studio Code",
-        "BlockingProcess": "Code",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 60,
-        "DeferralEnabled": true,
-        "MaxDeferralDays": 14,
-        "ForcedUpgradeMessage": "VS Code updates are now required for compatibility."
-    },
-    {
-        "AppID": "Salesforce.sfdx-cli",
-        "FriendlyName": "Salesforce CLI",
-        "Disabled": true
-    },
-    {
-        "AppID": "Microsoft.WindowsPCHealthCheck",
-        "FriendlyName": "PC Health Check",
-        "Disabled": true
-    },
-    {
-        "AppID": "Azul.Zulu",
-        "FriendlyName": "Azul Zulu JDK",
-        "Disabled": true
-    },
-    {
-        "AppID": "Microsoft.Edge",
-        "FriendlyName": "Microsoft Edge",
-        "Disabled": true
-    },
-    {
-        "AppID": "Oracle.JavaRuntimeEnvironment",
-        "FriendlyName": "Java Runtime Environment",
-        "Disabled": true
-    },
-    {
-        "AppID": "RStudio.RStudio.OpenSource",
-        "FriendlyName": "RStudio"
-    },
-    {
-        "AppID": "Posit.RStudio",
-        "FriendlyName": "RStudio",
-        "BlockingProcess": "rstudio"
-    },
-    {
-        "AppID": "RProject.R",
-        "FriendlyName": "R",
-        "BlockingProcess": "rgui"
-    },
-    {
-        "AppID": "Citrix.Workspace",
-        "FriendlyName": "Citrix Workspace",
-        "BlockingProcess": "cdviewer",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 90
-    },
-    {
-        "AppID": "Notepad++.Notepad++",
-        "FriendlyName": "Notepad++",
-        "BlockingProcess": "notepad++",
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 180,
-        "PromptWhenBlocked": true,
-        "DeferralEnabled": true,
-        "MaxDeferralDays": 14
-    },
-    {
-        "AppID": "7zip.7zip",
-        "FriendlyName": "7-Zip",
-        "BlockingProcess": "7zFM"
-    },
-    {
-        "AppID": "Zoom.Zoom",
-        "FriendlyName": "Zoom",
-        "BlockingProcess": "Zoom",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 60
-    },
-    {
-        "AppID": "Microsoft.PowerToys",
-        "Disabled":true,
-        "FriendlyName": "PowerToys",
-        "BlockingProcess": "PowerToys",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": true
-    },
-    {
-        "AppID": "AgileBits.1Password",
-        "FriendlyName": "1Password",
-        "BlockingProcess": "1Password",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 180,
-        "DeferralEnabled": true,
-        "MaxDeferralDays": 5,
-        "ForcedUpgradeMessage": "1Password updates can no longer be deferred."
-    },
-    {
-        "AppID": "Logitech.SetPoint",
-        "FriendlyName": "Logitech SetPoint"
-    },
-    {
-        "AppID": "TheDocumentFoundation.LibreOffice",
-        "FriendlyName": "LibreOffice",
-        "BlockingProcess": "soffice",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 120
-    },
-    {
-        "AppID": "Lenovo.QuickClean",
-        "FriendlyName": "Lenovo QuickClean"
-    },
-    {
-        "AppID": "Bitwarden.Bitwarden",
-        "FriendlyName": "Bitwarden",
-        "BlockingProcess": "Bitwarden",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 90
-    },
-    {
-        "AppID": "SumatraPDF.SumatraPDF",
-        "FriendlyName": "SumatraPDF",
-        "BlockingProcess": "SumatraPDF"
-    },
-    {
-        "AppID": "Microsoft.WindowsTerminal",
-        "FriendlyName": "Windows Terminal",
-        "BlockingProcess": "WindowsTerminal",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 60
-    },
-    {
-        "AppID": "Logitech.UnifyingSoftware",
-        "FriendlyName": "Logitech Unifying Software"
-    },
-    {
-        "AppID": "Microsoft.Azure.StorageExplorer",
-        "FriendlyName": "Azure Storage Explorer",
-        "BlockingProcess": "StorageExplorer",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 75,
-        "Disabled":true
-    },
-    {
-        "AppID": "calibre.calibre",
-        "FriendlyName": "Calibre",
-        "BlockingProcess": "calibre",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 75
-    },
-    {
-        "AppID": "wethat.onenotetaggingkit",
-        "FriendlyName": "OneNote Tagging Kit"
-    },
-    {
-        "AppID": "LogMeIn.LastPass",
-        "FriendlyName": "LastPass",
-        "BlockingProcess": "LastPass",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 90
-    },
-    {
-        "AppID": "Microsoft.PowerShell.Preview",
-        "FriendlyName": "PowerShell Preview"
-    },
-    {
-        "AppID": "PuTTY.PuTTY",
-        "FriendlyName": "PuTTY",
-        "BlockingProcess": "putty"
-    },
-    {
-        "AppID": "Git.Git",
-        "FriendlyName": "Git"
-    },
-    {
-        "AppID": "GitHub.GitHubDesktop",
-        "FriendlyName": "GitHub Desktop",
-        "BlockingProcess": "GitHubDesktop",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 90
-    },
-    {
-        "AppID": "RARLab.WinRAR",
-        "FriendlyName": "WinRAR",
-        "BlockingProcess": "WinRAR"
-    },
-    {
-        "AppID": "JGraph.Draw",
-        "FriendlyName": "draw.io"
-    },
-    {
-        "AppID": "Meld.Meld",
-        "FriendlyName": "Meld",
-        "BlockingProcess": "Meld"
-    },
-    {
-        "AppID": "Kitware.CMake",
-        "FriendlyName": "CMake"
-    },
-    {
-        "AppID": "VideoLAN.VLC",
-        "FriendlyName": "VLC Media Player",
-        "BlockingProcess": "vlc"
-    },
-    {
-        "AppID": "Jabra.Direct",
-        "FriendlyName": "Jabra Direct",
-        "BlockingProcess": "jabra-direct",
-        "AutoCloseProcesses": "jabra-direct"
-    },
-    {
-        "AppID": "ArtifexSoftware.GhostScript",
-        "FriendlyName": "Ghostscript"
-    },
-    {
-        "AppID": "ImageMagick.ImageMagick",
-        "FriendlyName": "ImageMagick"
-    },
-    {
-        "AppID": "IrfanSkiljan.IrfanView",
-        "FriendlyName": "IrfanView",
-        "BlockingProcess": "i_view64"
-    },
-    {
-        "AppID": "OpenJS.NodeJS",
-        "FriendlyName": "Node.js"
-    },
-    {
-        "AppID": "OpenJS.NodeJS.LTS",
-        "FriendlyName": "Node.js LTS"
-    },
-    {
-        "AppID": "Microsoft.webpicmd",
-        "FriendlyName": "Web Platform Installer"
-    },
-    {
-        "AppID": "Apache.OpenOffice",
-        "FriendlyName": "Apache OpenOffice",
-        "BlockingProcess": "soffice",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 120
-    },
-    {
-        "AppID": "DominikReichl.KeePass",
-        "FriendlyName": "KeePass",
-        "BlockingProcess": "KeePass"
-    },
-    {
-        "AppID": "Microsoft.UpdateAssistant",
-        "FriendlyName": "Windows Update Assistant"
-    },
-    {
-        "AppID": "Amazon.AWSCLI",
-        "FriendlyName": "AWS CLI"
-    },
-    {
-        "AppID": "Keybase.Keybase",
-        "FriendlyName": "Keybase",
-        "BlockingProcess": "Keybase"
-    },
-    {
-        "AppID": "Anki.Anki",
-        "FriendlyName": "Anki",
-        "BlockingProcess": "anki"
-    },
-    {
-        "AppID": "PostgreSQL.PostgreSQL",
-        "FriendlyName": "PostgreSQL"
-    },
-    {
-        "AppID": "WinSCP.WinSCP",
-        "FriendlyName": "WinSCP",
-        "BlockingProcess": "WinSCP",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 75
-    },
-    {
-        "AppID": "WinMerge.WinMerge",
-        "FriendlyName": "WinMerge",
-        "BlockingProcess": "WinMergeU",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 75
-    },
-    {
-        "AppID": "Adobe.Acrobat.Reader*",
-        "FriendlyName": "Adobe Acrobat Reader",
-        "Disabled": true,
-        "BlockingProcess": "AcroRd32,Acrobat,AcroBroker,AdobeARM,AdobeCollabSync",
-        "AutoCloseProcesses": "AdobeCollabSync",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 60,
-        "DeferralEnabled": true,
-        "MaxDeferralDays": 3,
-        "ForcedUpgradeMessage": "Adobe Reader security updates cannot be postponed due to security requirements."
-    },
-    {
-        "AppID": "RazerInc.RazerInstaller",
-        "FriendlyName": "Razer Installer"
-    },
-    {
-        "AppID": "Cloudflare.cloudflared",
-        "FriendlyName": "cloudflared"
-    },
-    {
-        "AppID": "Cloudflare.Warp",
-        "FriendlyName": "Cloudflare WARP",
-        "BlockingProcess": "Cloudflare WARP",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 90,
-        "DeferralEnabled": true,
-        "MaxDeferralDays": 3,
-        "ForcedUpgradeMessage": "Cloudflare WARP updates can no longer be deferred. Your network connection may briefly disconnect during the update."
-    },
-    {
-        "AppID": "Microsoft.Bicep",
-        "FriendlyName": "Bicep"
-    },
-    {
-        "AppID": "JanDeDobbeleer.OhMyPosh",
-        "FriendlyName": "Oh My Posh"
-    },
-    {
-        "AppID": "Logitech.Options",
-        "FriendlyName": "Logitech Options"
-    },
-    {
-        "AppID": "Logitech.OptionsPlus",
-        "FriendlyName": "Logi Options+",
-        "Disabled": true
-    },
-    {
-        "AppID": "TrackerSoftware.PDF-XChangeEditor",
-        "FriendlyName": "PDF-XChange Editor"
-    },
-    {
-        "AppID": "Microsoft.VCLibs.Desktop.*",
-        "FriendlyName": "VC++ Libs (Desktop)"
-    },
-    {
-        "AppID": "Microsoft.AzureDataStudio",
-        "FriendlyName": "Azure Data Studio",
-        "BlockingProcess": "azuredatastudio",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 60
-    },
-    {
-        "AppID": "Mythicsoft.AgentRansack",
-        "FriendlyName": "Agent Ransack",
-        "BlockingProcess": "AgentRansack",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 75
-    },
-    {
-        "AppID": "ParadoxInteractive.ParadoxLauncher",
-        "FriendlyName": "Paradox Launcher"
-    },
-    {
-        "AppID": "Fortinet.FortiClientVPN",
-        "FriendlyName": "FortiClient VPN",
-        "BlockingProcess": "FortiClient,FortiSSLVPNdaemon,FortiTray",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 60,
-        "Disabled": true,
-        "DeferralEnabled": false,
-        "MaxDeferralDays": 0,
-        "ForcedUpgradeMessage": "VPN client updates are mandatory for security compliance."
-    },
-    {
-        "AppID": "Foxit.FoxitReader.Inno",
-        "FriendlyName": "Foxit Reader",
-        "BlockingProcess": "FoxitReader"
-    },
-    {
-        "AppID": "OBSProject.OBSStudio",
-        "FriendlyName": "OBS Studio",
-        "BlockingProcess": "obs64",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 120
-    },
-    {
-        "AppID": "Python.Launcher",
-        "FriendlyName": "Python Launcher"
-    },
-    {
-        "AppID": "Microsoft.VCRedist.*",
-        "FriendlyName": "Visual C++ Redistributable"
-    },
-    {
-        "AppID": "TeamViewer.TeamViewer.Host",
-        "FriendlyName": "TeamViewer Host",
-        "Disabled": true,
-        "BlockingProcess": "TeamViewer_Service,TeamViewer_Desktop,TeamViewer",
-        "AutoCloseProcesses": "TeamViewer_Service,TeamViewer_Desktop,TeamViewer"
-    },
-    {
-        "AppID": "TeamViewer.TeamViewer",
-        "FriendlyName": "TeamViewer",
-        "BlockingProcess": "TeamViewer"
-    },
-    {
-        "AppID": "Dropbox.Dropbox",
-        "FriendlyName": "Dropbox",
-        "BlockingProcess": "Dropbox",
-        "AutoCloseProcesses": "Dropbox"
-    },
-    {
-        "AppID": "Microsoft.AzureCLI",
-        "FriendlyName": "Azure CLI"
-    },
-    {
-        "AppID": "Microsoft.PowerAutomateDesktop",
-        "FriendlyName": "Power Automate Desktop",
-        "BlockingProcess": "PAD.Console.Host,PAD.Robot.Service"
-    },
-    {
-        "AppID": "Microsoft.DotNet.Runtime.*",
-        "FriendlyName": ".NET Runtime"
-    },
-    {
-        "AppID": "Microsoft.PowerShell",
-        "FriendlyName": "PowerShell"
-    },
-    {
-        "AppID": "WiresharkFoundation.Wireshark",
-        "FriendlyName": "Wireshark",
-        "BlockingProcess": "Wireshark"
-    },
-    {
-        "AppID": "Microsoft.DotNet.SDK.*",
-        "FriendlyName": ".NET 8 SDK"
-    },
-    {
-        "AppID": "Microsoft.DotNet.DesktopRuntime.*",
-        "FriendlyName": ".NET 8 Desktop Runtime"
-    },
-    {
-        "AppID": "Anthropic.Claude",
-        "FriendlyName": "Claude",
-        "BlockingProcess": "Claude",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 60,
-        "DeferralEnabled": true,
-        "MaxDeferralDays": 5,
-        "ForcedUpgradeMessage": "Claude updates can no longer be deferred."
-    },
-    {
-        "AppID": "Perplexity.Comet",
-        "FriendlyName": "Perplexity Comet",
-        "BlockingProcess": "Comet",
-        "PromptWhenBlocked": true,
-        "DefaultTimeoutAction": false,
-        "TimeoutSeconds": 60
-    }
-]
+{
+    "CategoryDefaults": {
+        "Browser": {
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 60,
+            "DeferralEnabled": true,
+            "MaxDeferralDays": 5
+        },
+        "Security": {
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 120,
+            "DeferralEnabled": true,
+            "MaxDeferralDays": 5
+        },
+        "Network": {
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 90
+        },
+        "Development": {
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 90,
+            "DeferralEnabled": true,
+            "MaxDeferralDays": 14
+        },
+        "Productivity": {
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 120
+        },
+        "Communication": {
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 60
+        },
+        "AI": {
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 60,
+            "DeferralEnabled": true,
+            "MaxDeferralDays": 5
+        }
+    },
+    "Apps": [
+        {
+            "AppID": "Mozilla.Firefox*",
+            "FriendlyName": "Firefox",
+            "Category": "Browser",
+            "BlockingProcess": "firefox",
+            "ForcedUpgradeMessage": "Firefox security updates can no longer be deferred."
+        },
+        {
+            "AppID": "Google.Chrome*",
+            "FriendlyName": "Chrome",
+            "Category": "Browser",
+            "BlockingProcess": "chrome",
+            "ForcedUpgradeMessage": "Chrome security updates can no longer be deferred."
+        },
+        {
+            "AppID": "Microsoft.Edge",
+            "FriendlyName": "Microsoft Edge",
+            "Category": "Browser",
+            "Disabled": true
+        },
+
+        {
+            "AppID": "AgileBits.1Password",
+            "FriendlyName": "1Password",
+            "Category": "Security",
+            "BlockingProcess": "1Password",
+            "TimeoutSeconds": 180,
+            "ForcedUpgradeMessage": "1Password updates can no longer be deferred."
+        },
+        {
+            "AppID": "Bitwarden.Bitwarden",
+            "FriendlyName": "Bitwarden",
+            "Category": "Security",
+            "BlockingProcess": "Bitwarden",
+            "TimeoutSeconds": 90
+        },
+        {
+            "AppID": "LogMeIn.LastPass",
+            "FriendlyName": "LastPass",
+            "Category": "Security",
+            "BlockingProcess": "LastPass",
+            "TimeoutSeconds": 90
+        },
+        {
+            "AppID": "DominikReichl.KeePass",
+            "FriendlyName": "KeePass",
+            "Category": "Security",
+            "BlockingProcess": "KeePass"
+        },
+        {
+            "AppID": "Keybase.Keybase",
+            "FriendlyName": "Keybase",
+            "Category": "Security",
+            "BlockingProcess": "Keybase"
+        },
+
+        {
+            "AppID": "Cloudflare.Warp",
+            "FriendlyName": "Cloudflare WARP",
+            "Category": "Network",
+            "BlockingProcess": "Cloudflare WARP",
+            "DeferralEnabled": true,
+            "MaxDeferralDays": 3,
+            "ForcedUpgradeMessage": "Cloudflare WARP updates can no longer be deferred. Your network connection may briefly disconnect during the update."
+        },
+        {
+            "AppID": "Cloudflare.cloudflared",
+            "FriendlyName": "cloudflared",
+            "Category": "Network"
+        },
+        {
+            "AppID": "Fortinet.FortiClientVPN",
+            "FriendlyName": "FortiClient VPN",
+            "Category": "Network",
+            "BlockingProcess": "FortiClient,FortiSSLVPNdaemon,FortiTray",
+            "TimeoutSeconds": 60,
+            "Disabled": true,
+            "DeferralEnabled": false,
+            "MaxDeferralDays": 0,
+            "ForcedUpgradeMessage": "VPN client updates are mandatory for security compliance."
+        },
+        {
+            "AppID": "Citrix.Workspace",
+            "FriendlyName": "Citrix Workspace",
+            "Category": "Network",
+            "BlockingProcess": "cdviewer"
+        },
+        {
+            "AppID": "PuTTY.PuTTY",
+            "FriendlyName": "PuTTY",
+            "Category": "Network",
+            "BlockingProcess": "putty"
+        },
+        {
+            "AppID": "WinSCP.WinSCP",
+            "FriendlyName": "WinSCP",
+            "Category": "Network",
+            "BlockingProcess": "WinSCP",
+            "TimeoutSeconds": 75
+        },
+
+        {
+            "AppID": "Microsoft.VisualStudioCode",
+            "FriendlyName": "Visual Studio Code",
+            "Category": "Development",
+            "BlockingProcess": "Code",
+            "TimeoutSeconds": 60,
+            "ForcedUpgradeMessage": "VS Code updates are now required for compatibility."
+        },
+        {
+            "AppID": "Git.Git",
+            "FriendlyName": "Git",
+            "Category": "Development"
+        },
+        {
+            "AppID": "GitHub.GitHubDesktop",
+            "FriendlyName": "GitHub Desktop",
+            "Category": "Development",
+            "BlockingProcess": "GitHubDesktop"
+        },
+        {
+            "AppID": "Notepad++.Notepad++",
+            "FriendlyName": "Notepad++",
+            "Category": "Development",
+            "BlockingProcess": "notepad++",
+            "TimeoutSeconds": 180
+        },
+        {
+            "AppID": "Microsoft.PowerShell",
+            "FriendlyName": "PowerShell",
+            "Category": "Development"
+        },
+        {
+            "AppID": "Microsoft.PowerShell.Preview",
+            "FriendlyName": "PowerShell Preview",
+            "Category": "Development"
+        },
+        {
+            "AppID": "Microsoft.WindowsTerminal",
+            "FriendlyName": "Windows Terminal",
+            "Category": "Development",
+            "BlockingProcess": "WindowsTerminal",
+            "TimeoutSeconds": 60
+        },
+        {
+            "AppID": "JanDeDobbeleer.OhMyPosh",
+            "FriendlyName": "Oh My Posh",
+            "Category": "Development"
+        },
+        {
+            "AppID": "OpenJS.NodeJS",
+            "FriendlyName": "Node.js",
+            "Category": "Development"
+        },
+        {
+            "AppID": "OpenJS.NodeJS.LTS",
+            "FriendlyName": "Node.js LTS",
+            "Category": "Development"
+        },
+        {
+            "AppID": "Python.Launcher",
+            "FriendlyName": "Python Launcher",
+            "Category": "Development"
+        },
+        {
+            "AppID": "Kitware.CMake",
+            "FriendlyName": "CMake",
+            "Category": "Development"
+        },
+        {
+            "AppID": "Microsoft.Bicep",
+            "FriendlyName": "Bicep",
+            "Category": "Development"
+        },
+        {
+            "AppID": "Microsoft.AzureCLI",
+            "FriendlyName": "Azure CLI",
+            "Category": "Development"
+        },
+        {
+            "AppID": "Microsoft.AzureDataStudio",
+            "FriendlyName": "Azure Data Studio",
+            "Category": "Development",
+            "BlockingProcess": "azuredatastudio",
+            "TimeoutSeconds": 60
+        },
+        {
+            "AppID": "Microsoft.Azure.StorageExplorer",
+            "FriendlyName": "Azure Storage Explorer",
+            "Category": "Development",
+            "BlockingProcess": "StorageExplorer",
+            "TimeoutSeconds": 75,
+            "Disabled": true
+        },
+        {
+            "AppID": "Amazon.AWSCLI",
+            "FriendlyName": "AWS CLI",
+            "Category": "Development"
+        },
+        {
+            "AppID": "Salesforce.sfdx-cli",
+            "FriendlyName": "Salesforce CLI",
+            "Category": "Development",
+            "Disabled": true
+        },
+        {
+            "AppID": "Meld.Meld",
+            "FriendlyName": "Meld",
+            "Category": "Development",
+            "BlockingProcess": "Meld"
+        },
+        {
+            "AppID": "WinMerge.WinMerge",
+            "FriendlyName": "WinMerge",
+            "Category": "Development",
+            "BlockingProcess": "WinMergeU",
+            "TimeoutSeconds": 75
+        },
+        {
+            "AppID": "JGraph.Draw",
+            "FriendlyName": "draw.io",
+            "Category": "Development"
+        },
+        {
+            "AppID": "Microsoft.webpicmd",
+            "FriendlyName": "Web Platform Installer",
+            "Category": "Development"
+        },
+        {
+            "AppID": "WiresharkFoundation.Wireshark",
+            "FriendlyName": "Wireshark",
+            "Category": "Development",
+            "BlockingProcess": "Wireshark"
+        },
+
+        {
+            "AppID": "Microsoft.DotNet.Runtime.*",
+            "FriendlyName": ".NET Runtime",
+            "Category": "Runtime"
+        },
+        {
+            "AppID": "Microsoft.DotNet.SDK.*",
+            "FriendlyName": ".NET 8 SDK",
+            "Category": "Runtime"
+        },
+        {
+            "AppID": "Microsoft.DotNet.DesktopRuntime.*",
+            "FriendlyName": ".NET 8 Desktop Runtime",
+            "Category": "Runtime"
+        },
+        {
+            "AppID": "Microsoft.VCRedist.*",
+            "FriendlyName": "Visual C++ Redistributable",
+            "Category": "Runtime"
+        },
+        {
+            "AppID": "Microsoft.VCLibs.Desktop.*",
+            "FriendlyName": "VC++ Libs (Desktop)",
+            "Category": "Runtime"
+        },
+        {
+            "AppID": "Oracle.JavaRuntimeEnvironment",
+            "FriendlyName": "Java Runtime Environment",
+            "Category": "Runtime",
+            "Disabled": true
+        },
+        {
+            "AppID": "Azul.Zulu",
+            "FriendlyName": "Azul Zulu JDK",
+            "Category": "Runtime",
+            "Disabled": true
+        },
+
+        {
+            "AppID": "TheDocumentFoundation.LibreOffice",
+            "FriendlyName": "LibreOffice",
+            "Category": "Productivity",
+            "BlockingProcess": "soffice"
+        },
+        {
+            "AppID": "Apache.OpenOffice",
+            "FriendlyName": "Apache OpenOffice",
+            "Category": "Productivity",
+            "BlockingProcess": "soffice"
+        },
+        {
+            "AppID": "Adobe.Acrobat.Reader*",
+            "FriendlyName": "Adobe Acrobat Reader",
+            "Category": "Productivity",
+            "Disabled": true,
+            "BlockingProcess": "AcroRd32,Acrobat,AcroBroker,AdobeARM,AdobeCollabSync",
+            "AutoCloseProcesses": "AdobeCollabSync",
+            "TimeoutSeconds": 60,
+            "DeferralEnabled": true,
+            "MaxDeferralDays": 3,
+            "ForcedUpgradeMessage": "Adobe Reader security updates cannot be postponed due to security requirements."
+        },
+        {
+            "AppID": "Foxit.FoxitReader.Inno",
+            "FriendlyName": "Foxit Reader",
+            "Category": "Productivity",
+            "BlockingProcess": "FoxitReader"
+        },
+        {
+            "AppID": "TrackerSoftware.PDF-XChangeEditor",
+            "FriendlyName": "PDF-XChange Editor",
+            "Category": "Productivity"
+        },
+        {
+            "AppID": "SumatraPDF.SumatraPDF",
+            "FriendlyName": "SumatraPDF",
+            "Category": "Productivity",
+            "BlockingProcess": "SumatraPDF"
+        },
+        {
+            "AppID": "calibre.calibre",
+            "FriendlyName": "Calibre",
+            "Category": "Productivity",
+            "BlockingProcess": "calibre",
+            "TimeoutSeconds": 75
+        },
+        {
+            "AppID": "wethat.onenotetaggingkit",
+            "FriendlyName": "OneNote Tagging Kit",
+            "Category": "Productivity"
+        },
+
+        {
+            "AppID": "Zoom.Zoom",
+            "FriendlyName": "Zoom",
+            "Category": "Communication",
+            "BlockingProcess": "Zoom"
+        },
+        {
+            "AppID": "TeamViewer.TeamViewer",
+            "FriendlyName": "TeamViewer",
+            "Category": "Communication",
+            "BlockingProcess": "TeamViewer"
+        },
+        {
+            "AppID": "TeamViewer.TeamViewer.Host",
+            "FriendlyName": "TeamViewer Host",
+            "Category": "Communication",
+            "Disabled": true,
+            "BlockingProcess": "TeamViewer_Service,TeamViewer_Desktop,TeamViewer",
+            "AutoCloseProcesses": "TeamViewer_Service,TeamViewer_Desktop,TeamViewer"
+        },
+        {
+            "AppID": "Dropbox.Dropbox",
+            "FriendlyName": "Dropbox",
+            "Category": "Communication",
+            "BlockingProcess": "Dropbox",
+            "AutoCloseProcesses": "Dropbox"
+        },
+
+        {
+            "AppID": "Anthropic.Claude",
+            "FriendlyName": "Claude",
+            "Category": "AI",
+            "BlockingProcess": "Claude",
+            "ForcedUpgradeMessage": "Claude updates can no longer be deferred."
+        },
+        {
+            "AppID": "Perplexity.Comet",
+            "FriendlyName": "Perplexity Comet",
+            "Category": "AI",
+            "BlockingProcess": "Comet"
+        },
+
+        {
+            "AppID": "VideoLAN.VLC",
+            "FriendlyName": "VLC Media Player",
+            "Category": "Media",
+            "BlockingProcess": "vlc"
+        },
+        {
+            "AppID": "OBSProject.OBSStudio",
+            "FriendlyName": "OBS Studio",
+            "Category": "Media",
+            "BlockingProcess": "obs64",
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 120
+        },
+        {
+            "AppID": "ImageMagick.ImageMagick",
+            "FriendlyName": "ImageMagick",
+            "Category": "Media"
+        },
+        {
+            "AppID": "IrfanSkiljan.IrfanView",
+            "FriendlyName": "IrfanView",
+            "Category": "Media",
+            "BlockingProcess": "i_view64"
+        },
+        {
+            "AppID": "ArtifexSoftware.GhostScript",
+            "FriendlyName": "Ghostscript",
+            "Category": "Media"
+        },
+
+        {
+            "AppID": "7zip.7zip",
+            "FriendlyName": "7-Zip",
+            "Category": "Utility",
+            "BlockingProcess": "7zFM"
+        },
+        {
+            "AppID": "RARLab.WinRAR",
+            "FriendlyName": "WinRAR",
+            "Category": "Utility",
+            "BlockingProcess": "WinRAR"
+        },
+        {
+            "AppID": "Mythicsoft.AgentRansack",
+            "FriendlyName": "Agent Ransack",
+            "Category": "Utility",
+            "BlockingProcess": "AgentRansack",
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": false,
+            "TimeoutSeconds": 75
+        },
+        {
+            "AppID": "Microsoft.PowerToys",
+            "FriendlyName": "PowerToys",
+            "Category": "Utility",
+            "Disabled": true,
+            "BlockingProcess": "PowerToys",
+            "PromptWhenBlocked": true,
+            "DefaultTimeoutAction": true
+        },
+        {
+            "AppID": "Microsoft.UpdateAssistant",
+            "FriendlyName": "Windows Update Assistant",
+            "Category": "Utility"
+        },
+        {
+            "AppID": "Microsoft.WindowsPCHealthCheck",
+            "FriendlyName": "PC Health Check",
+            "Category": "Utility",
+            "Disabled": true
+        },
+        {
+            "AppID": "Microsoft.PowerAutomateDesktop",
+            "FriendlyName": "Power Automate Desktop",
+            "Category": "Utility",
+            "BlockingProcess": "PAD.Console.Host,PAD.Robot.Service"
+        },
+
+        {
+            "AppID": "Logitech.SetPoint",
+            "FriendlyName": "Logitech SetPoint",
+            "Category": "Peripheral"
+        },
+        {
+            "AppID": "Logitech.UnifyingSoftware",
+            "FriendlyName": "Logitech Unifying Software",
+            "Category": "Peripheral"
+        },
+        {
+            "AppID": "Logitech.Options",
+            "FriendlyName": "Logitech Options",
+            "Category": "Peripheral"
+        },
+        {
+            "AppID": "Logitech.OptionsPlus",
+            "FriendlyName": "Logi Options+",
+            "Category": "Peripheral",
+            "Disabled": true
+        },
+        {
+            "AppID": "Jabra.Direct",
+            "FriendlyName": "Jabra Direct",
+            "Category": "Peripheral",
+            "BlockingProcess": "jabra-direct",
+            "AutoCloseProcesses": "jabra-direct"
+        },
+        {
+            "AppID": "RazerInc.RazerInstaller",
+            "FriendlyName": "Razer Installer",
+            "Category": "Peripheral"
+        },
+        {
+            "AppID": "Lenovo.QuickClean",
+            "FriendlyName": "Lenovo QuickClean",
+            "Category": "Peripheral"
+        },
+
+        {
+            "AppID": "RProject.R",
+            "FriendlyName": "R",
+            "Category": "Research",
+            "BlockingProcess": "rgui"
+        },
+        {
+            "AppID": "RStudio.RStudio.OpenSource",
+            "FriendlyName": "RStudio",
+            "Category": "Research"
+        },
+        {
+            "AppID": "Posit.RStudio",
+            "FriendlyName": "RStudio",
+            "Category": "Research",
+            "BlockingProcess": "rstudio"
+        },
+        {
+            "AppID": "PostgreSQL.PostgreSQL",
+            "FriendlyName": "PostgreSQL",
+            "Category": "Research"
+        },
+        {
+            "AppID": "Anki.Anki",
+            "FriendlyName": "Anki",
+            "Category": "Research",
+            "BlockingProcess": "anki"
+        },
+
+        {
+            "AppID": "ParadoxInteractive.ParadoxLauncher",
+            "FriendlyName": "Paradox Launcher",
+            "Category": "Other"
+        }
+    ]
+}

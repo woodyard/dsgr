@@ -398,20 +398,6 @@
             "BlockingProcess": "Zoom"
         },
         {
-            "AppID": "TeamViewer.TeamViewer",
-            "FriendlyName": "TeamViewer",
-            "Category": "Communication",
-            "BlockingProcess": "TeamViewer"
-        },
-        {
-            "AppID": "TeamViewer.TeamViewer.Host",
-            "FriendlyName": "TeamViewer Host",
-            "Category": "Communication",
-            "Disabled": true,
-            "BlockingProcess": "TeamViewer_Service,TeamViewer_Desktop,TeamViewer",
-            "AutoCloseProcesses": "TeamViewer_Service,TeamViewer_Desktop,TeamViewer"
-        },
-        {
             "AppID": "Dropbox.Dropbox",
             "FriendlyName": "Dropbox",
             "Category": "Communication",

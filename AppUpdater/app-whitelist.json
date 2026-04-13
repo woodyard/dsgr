@@ -416,6 +416,7 @@
             "AppID": "Perplexity.Comet",
             "FriendlyName": "Perplexity Comet",
             "Category": "AI",
+            "Disabled": true,
             "BlockingProcess": "Comet"
         },
 

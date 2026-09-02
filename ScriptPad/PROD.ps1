@@ -1,67 +1,7 @@
-#================================================
-#   [PreOS] Update Module
-#================================================
-if ((Get-MyComputerModel) -match 'Virtual') {
-    Write-Host  -ForegroundColor Green "Setting Display Resolution to 1600x"
-    Set-DisRes 1600
-}
-
-#Write-Host -ForegroundColor Green "Updating OSD PowerShell Module"
-#Install-Module OSD -Force
-
-Write-Host  -ForegroundColor Green "Importing OSD PowerShell Module"
-Import-Module OSD -Force   
-
-#=======================================================================
-#   [OS] Params and Start-OSDCloud
-#=======================================================================
-$Params = @{
-    OSName = "Windows 11 25H2 x64"
-    OSEdition = "Pro"
-    OSLanguage = "en-us"
-    OSLicense = "Retail"
-    ZTI = $true
-    Firmware = $false
-}
-
-Start-OSDCloud @Params
-
-#================================================
-#  [PostOS] AutopilotOOBE CMD Command Line
-#================================================
-Write-Host -ForegroundColor Green "Create C:\Windows\System32\OOBE.cmd"
-$OOBECMD = @'
-PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
-Set Path = %PATH%;C:\Program Files\WindowsPowerShell\Scripts
-Start /Wait PowerShell -NoL -C Install-Module AutopilotOOBE -Force
-Start /Wait PowerShell -NoL -C Install-Module OSD -Force
-Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/woodyard/dsgr/main/oobe-PROD.ps1
-'@
-$OOBECMD | Out-File -FilePath 'C:\Windows\System32\OOBE.cmd' -Encoding ascii -Force
-
-#================================================
-#  [PostOS] SetupComplete CMD Command Line
-#================================================
-Write-Host -ForegroundColor Green "Create C:\Windows\Setup\Scripts\SetupComplete.cmd"
-$SetupCompleteCMD = @'
-'@
-$SetupCompleteCMD | Out-File -FilePath 'C:\Windows\Setup\Scripts\SetupComplete.cmd' -Encoding ascii -Force
-
-#=======================================================================
-#   Enable "Audit process tracking"
-#=======================================================================
-Write-Host -ForegroundColor Green "Get 'Detailed tracking' properties"
-C:\Windows\System32\auditpol.exe /get /category:"Detailed Tracking"
-
-Write-Host -ForegroundColor Green "Enable 'Audit process tracking'"
-C:\Windows\System32\auditpol.exe /set /category:"Detailed Tracking" /success:enable
-
-Write-Host -ForegroundColor Green "Get 'Audit process tracking' properties"
-C:\Windows\System32\auditpol.exe /get /category:"Detailed Tracking"
-
-#=======================================================================
-#   Restart-Computer
-#=======================================================================
-Write-Host  -ForegroundColor Green "Restarting in 20 seconds!"
-Start-Sleep -Seconds 20
-wpeutil reboot
+# Thin wrapper: runs the shared deploy.ps1 for profile PROD.
+# Edit deploy.ps1 to change deployment behaviour, not this file.
+Import-Module OSD -Force
+$Uri  = 'https://raw.githubusercontent.com/woodyard/dsgr/main/deploy.ps1'
+$Path = Join-Path $env:TEMP 'dsgr-deploy.ps1'
+Invoke-WebRequest -UseBasicParsing -Uri $Uri -OutFile $Path
+& $Path -GroupTag 'PROD'
